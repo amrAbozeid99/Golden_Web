@@ -1,0 +1,734 @@
+
+/* #181A1C */
+/* #FECE1A */
+*{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #181A1C;
+    color: whitesmoke;
+        text-decoration: none;
+        font-style: normal;
+        text-decoration-line: none;
+        width: 100%;
+}
+
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Nav Zone */
+
+.nav{
+    background: #181a1ce1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 0px 0px 5px;
+    display: flex;
+    text-align: center ;
+    z-index: 0;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 0px 20px 0px 0px;
+
+}
+
+.smail-nav-list{display: none;}
+
+.homeNavZone{
+    width: 100%;
+    position: fixed;
+}
+
+.nav-Link{
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: x-large;
+    cursor: context-menu;
+}
+.nav-Link:hover{border-bottom: 2px solid goldenrod;padding: 2px;}
+
+.homeNavZonespase{width: 100%;height: 70px;}
+
+.NavButtonZone{display: none;}
+    .navOff{display: none;}
+    .NavButtonOff{background-color: #ff0202af;color: whitesmoke;border: 0px;font-size: xx-large;padding: 5px;border-radius: 50%;width: 60px;height: 60px;}
+
+    @media (max-width: 780px) {
+    .navOff{display: none;}
+    .nav-list{display: none;}
+    .smail-nav-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: #0000009c;
+        padding: 20px;
+    }
+    .NavButtonZone{
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: right;
+        padding: 0px 20px 0px 0px;
+    }
+    .NavButton{
+        width: 60px;
+        height: 60px;
+        background-color: #181A1C;
+        border: 1 solid rgba(0, 0, 0, 0);
+        color: #ffffff;
+        border-radius: 19px;
+    }
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* slide home zone  */
+
+.SlideHome{
+    width: 100%;
+    min-height: 550px;
+    background-color: #FECE1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.SlideHomeData{width: 50%;color: #000;}
+.SlideHomeimg{width: 600px;height: 400px; }
+
+@media (max-width: 780px) {
+    .SlideHomeData{width: 100%;color: #000;text-align: center;}
+    .SlideHomeimg{width: 300;height: 250px; }
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Services zone */
+.Serviceshome{
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.servicesDataA{
+    font-size: xx-large;
+}
+.servicesDataB{
+    color: #FECE1A;
+    padding: 30px;
+    border-bottom: 3px solid white;
+}
+.servicesCountinerCarts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 0px 0px 0px;
+}
+.servicesCart{
+    width: 300px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+.servicesCartImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition:0.5s;
+    border: 4px solid white;
+}
+.servicesCartImg:hover{width: 160px;height: 160px;transition:0.5s;}
+.servicesCartdata{
+    color: #FECE1A;
+    padding: 10px 0px 10px 0px;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Portfolio Zone */
+
+.PortfolioHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 0px 10px 0px;
+    padding: 10px;
+    background-color: #FECE1A;
+    color: #000;
+    text-align: center;
+}
+.PortfolioHomeBodyData{
+    padding: 10px 40px 10px 40px;
+    border-bottom: 5px solid black;
+}
+.PortfolioHomeButtonS{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0px 30px 0px;
+}
+.PortfolioHomeButton{
+    background-color: #00000000;
+    border: 2px solid black;
+    padding: 3px;
+    width: auto;
+    font-size: larger;
+    font-weight: bold;
+}
+.PortfolioHomeButton:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.PortfolioCatrList{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.PortfolioCart{
+    width: 300px;
+    min-height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #181a1cbb;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 5px black;
+    border-radius: 16px;
+}
+.PortfolioCatrImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.PortfolioCatrtitle{
+    font-weight: bold;
+    font-size: x-large;
+    color: #FECE1A;
+    text-shadow: 0 0 2px rgb(0, 0, 0),0 0 4px rgb(0, 0, 0),0 0 6px rgba(0, 0, 0, 0.651);
+}
+.PortfolioCatrbutton{
+    padding: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    color: #181A1C;
+    border-radius: 16px;
+}
+.PortfolioCatrbutton:hover{
+    color: #FECE1A;
+    background: #181A1C;
+    box-shadow: 0 0 5px #ffffff;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* About Zone */
+
+.AboutHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+.AboutHeadData{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.AboutHeadBady{
+    color: #FECE1A;
+    border-bottom: 4px solid white;
+    padding: 10px 50px 20px 50px;
+}
+.AboutTeamData{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.AboutTeamCart{
+    width: 250px;
+    border: 3px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.AboutUsZone{
+    margin: 35px 0px 0px 0px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.AboutHiringZone{
+    width: 65%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border:3px solid #FECE1A;
+}
+.AboutHiringLink{
+    padding: 10px;
+    border: 3px solid #181A1C;
+    color: #FECE1A;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.AboutHiringLink:hover{
+    background-color: #181A1C;
+    text-shadow: 0 0 5px wheat;
+}
+
+.AboutorederZone{
+    width: 100%;
+    background-color: #FECE1A;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: x-large;
+    gap: 10px;
+    text-shadow: 0 0 5px black;
+}
+.AboutorederLink{
+    padding: 5px;
+    font-size: larger;
+    color: #181A1C;
+    border:3px solid #181A1C;
+    border-radius: 16px;
+}
+.AboutorederLink:hover{
+    color: #ffffff;
+    background-color: #181A1C;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Clients Zone */
+
+.ClientsHome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.ClientsHomeData{
+    color: #FECE1A;
+    padding: 30px;
+    border-bottom: 3px solid white;
+}
+.ClientsCarts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    gap: 20px;
+}
+.ClientsCart{
+    width: 300px;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 0 5px #FECE1A;
+    overflow: hidden;
+}
+.ClientsCartData{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+.ClientsHomeDataEnd{
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 6px solid #FECE1A;
+}
+.OurClientsHome{
+    width: 100%;
+    min-height: 200px;
+    background: url(./components/imge/images/brand-bg.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    text-shadow: 0 0 6px wheat;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Price Zone */
+
+.PriceHome{
+    padding-top: 50px;
+    width: 100%;
+    background-color: #FECE1A;
+    color: #181A1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.PriceHomeData{
+    padding: 25px 40px 10px 40px;
+    border-bottom: 3px solid #181A1C;
+}
+.PriceLestConteaner{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.PriceOfaer{
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column  ;
+    border-radius: 16px;
+    color: #FECE1A;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+}
+.PriceOfaerHead{
+    width: 100%;
+    height: 100px;
+    background-color:#181A1C;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.PriceOfaerLest{
+    list-style: none;
+}
+.PriceOfaerSlied{
+    font-size: larger;
+    font-weight: bold;
+    text-decoration:none;
+    color: #2e3033a9;
+    padding: 25px 15px 25px 15px;
+    border-bottom: 1px solid #181A1C;
+}
+.PriceOfaerButton{
+    min-width: 90px;
+    min-height: 50px;
+    border: 0px;
+    background-color: #181A1C;
+    color: #FECE1A;
+    font-size: larger;
+    margin: 10px;
+}
+.PriceOfaerButton:hover{
+    background-color: #FECE1A;
+    color: #181A1C;
+}
+.EndPriceHome{
+    padding: 40px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+.EndPriceHomeTitel{
+    font-size: larger;
+    padding: 20px;
+}
+.EndPriceHomeLink{
+    min-width: 145px;
+    min-height: 50px;
+    color: #181A1C;
+    font-size: larger;
+    border: 2px solid #181A1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EndPriceHomeLink:hover{
+    border: 2px solid #181A1C;
+    background-color: #181A1C;
+    color: white;
+}
+.PriceHomeComunteAcount{
+    width: 100%;
+    min-height: 250px;
+    background: url(./components/imge/images/brand-bg.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.PriceHomeComunteAcountHead{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    border-bottom: 3px solid whitesmoke;
+    color: white;
+}
+.PriceHomeComunteAcountBody{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.PriceHomeComunteAcountBodyTitel{
+    width: 45%;
+    color: white;
+}
+.PriceHomeComunteAcountBodyEmail{
+    width: 400px;
+    height: 50px;
+    border: 0px;
+    background-color: white;
+    color: #000;
+}
+.PriceHomeComunteAcountBodyButton{
+    width: 100px;
+    height: 50px;
+    background-color: #FECE1A;
+    color: #181A1C;
+    padding: 10px;
+    border: 2px solid #181A1C;
+}
+.PriceHomeComunteAcountBodyButton:hover{
+    background-color: #181A1C;
+    color: #FECE1A;
+    border: 2px solid #FECE1A;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Contact Zone */
+
+.ContactHome{
+    padding-top: 50px;
+    width: 100%;
+    background-color: #FECE1A;
+    color: #181A1C;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.ContactHomeText{
+    padding: 10px 20px 20px 20px;
+    border-bottom: 3px solid #181A1C;
+}
+.ContactHomeEmallZone{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #181A1C;
+}
+.ContactHomeform{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.637);
+    padding: 20px;
+    gap: 20px;   
+}
+.ContactHomeformData{
+    width: 300px;
+    height: 50px;
+    background-color: wheat;
+    border: 2px solid #181A1C;
+    border-radius: 8px; 
+    padding: 10px;
+    font-size: larger;
+}
+.ContactHomeformComint{
+    width: 300px;
+    height: 150px;
+    background-color: wheat;
+    border: 2px solid #181A1C;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: larger;
+}
+.ContactHomeformButton{
+    width: 175px;
+    height: 50px;
+    border: 3px solid #181A1C;
+    background-color: rgba(255, 255, 255, 0);
+}
+.ContactHomeformButton:hover{
+    background-color: #FECE1A;
+}
+.ContactHomeEndZone{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: larger;
+}
+.ContactHomeEndZoneEmail{
+    padding: 10px;
+    border: 2px solid #feffff;
+    box-shadow: 0 0 2px bisque;
+}
+.ContactHomeEndZoneTEXT{
+    font-size: larger;
+    font-weight: bold;
+    padding: 0px 160px 0px 160px;
+    border-bottom: 3px solid #181A1C;
+}
+.ContactHomeEndsoshelLeinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ContactHomeEndsoshelLeink{
+    width: 60px;
+    height: 60px;
+    background-color: #181A1C;
+    border:3px solid #FECE1A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FECE1A;
+    font-size: 45px;
+}
+.ContactHomeEndsoshelLeink:hover{
+    background-color: #FECE1A;
+    border:3px solid #181A1C;
+    color: #181A1C;
+}
+
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* ________________________________________________________________________________________________________________________________ */
+/* Footer Zone */
+
+.FooterHome{
+    width: 100%;
+    background-color: #181A1C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}

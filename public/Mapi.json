@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "PC Games Market Project",
+        "price": 38.7,
+        "description": "It is a website created by PC Market Company with the aim of selling all computer contents.",
+        "category": "next",
+        "LinkTarget": "https://pc-games-market-two.vercel.app/",
+        "image": "./img/projectes/pc games market.png",
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Albreky Project",
+        "price": 5.18,
+        "description": "Al-Buraqi is an existing website for selling furniture, and I have imitated its design.",
+        "category": "react",
+        "LinkTarget": "https://albreky-test.web.app/",
+        "image": "./img/projectes/albreky.png",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "RED GYM",
+        "price": 45.3,
+        "description": "Red Gym is a one-page website that carries the client's visual identity.",
+        "category": "react",
+        "LinkTarget": "https://theredgym-24f83.web.app/",
+        "image": "./img/projectes/Red Gym.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    }
+    ,
+    {
+        "id": 4,
+        "title": "blue Dashboard",
+        "price": 45.3,
+        "description": "This is a prototype of a responsive dashboard for all available sizes.",
+        "category": "native",
+        "LinkTarget": "https://golden-dashboard-start.web.app/",
+        "image": "./img/projectes/Golden Dashboard.webp",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 5,
+        "title": "X O GAME",
+        "price": 45.3,
+        "description": "Enjoy one of the most beautiful classic games.",
+        "category": "native",
+        "LinkTarget": "https://x-o-game-b95c7.web.app/",
+        "image": "./img/projectes/x o game.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    }
+]

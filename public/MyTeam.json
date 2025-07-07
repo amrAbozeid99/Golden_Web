@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "AMR AboZeid",
+        "price": 38.7,
+        "description": "",
+        "category": "Front End",
+        "LinkTarget": "",
+        "image": "./img/team/About.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "name": "Eslam ELsheikh",
+        "price": 5.18,
+        "description": "",
+        "category": "Back End",
+        "LinkTarget": "",
+        "image": "./img/team/About.png",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "name": "mahmod aly",
+        "price": 45.3,
+        "description": "",
+        "category": "UI UX",
+        "LinkTarget": "",
+        "image": "./img/team/About.png",
+        "rating": {
+            "rate": 3.7,
+            "count": 500
+        }
+    }
+
+]
