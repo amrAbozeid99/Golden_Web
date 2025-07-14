@@ -65,7 +65,7 @@ const About = () => {
 
 
 <div className="AboutorederZone">
-<p>Elegance is not the abundance of simplicity. It is the absence of complexity.</p>
+<p style={{width:'90%'}}>Elegance is not the abundance of simplicity. It is the absence of complexity.</p>
     <Link className='AboutorederLink' href="/">Purshase now</Link>
 </div>
 

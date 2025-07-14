@@ -236,12 +236,17 @@ body{
     background-color: #FECE1A;
     color: #000;
     text-align: center;
-        padding-top: 75px;
+        padding-top: 5px;
+            border-bottom: 60px solid #FECE1A;
+            border-top: 70px solid #FECE1A;
+    border-radius: 200px 200px 500px 500px;
+    box-shadow: 0 0 10px #FECE1A;
 }
 .PortfolioHomeBodyData{
     padding: 10px 40px 10px 40px;
     border-bottom: 5px solid black;
 }
+.PortfolioHomeHeadData{width: 96%;}
 .PortfolioHomeButtonS{
     width: 100%;
     display: flex;
@@ -390,15 +395,17 @@ body{
 .AboutorederZone{
     width: 100%;
     background-color: #FECE1A;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: x-large;
     gap: 10px;
     text-shadow: 0 0 5px black;
+    padding: 10px;
 }
 .AboutorederLink{
     padding: 5px;

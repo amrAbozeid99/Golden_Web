@@ -21,7 +21,7 @@ useEffect(() => {
   AOS.init({
     duration: 1000, // مدة التحريك
     easing: "ease-in-out", // نوع الحركة
-    once: true, // هل يظهر التأثير مرة واحدة فقط
+    // once: true, // هل يظهر التأثير مرة واحدة فقط
   });
 }, []);
 
