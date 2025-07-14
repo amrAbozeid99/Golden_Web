@@ -23,7 +23,7 @@ const Nav = () => {
 
   return (
 <>
-<div className='nav' data-aos="fade-down">
+<div className='nav'>
         <a href="#"><Image src={LOGO} alt="LOGO"  style={{width:'90px',height:'66px'}}/></a>
         <ul className='nav-list'>
             <Link to='Home' smooth={true} duration={1000} className='nav-Link'>Home</Link>
