@@ -1,11 +1,16 @@
 "use client";
 
 import React from 'react'
+import { useState , useEffect } from 'react';
 import LOGO from './imge/logo.png'
 // import Link from 'next/link';
 import { Link } from 'react-scroll'
 import Image from 'next/image';
-import { useState , useEffect } from 'react';
+import { AiOutlineBars } from "react-icons/ai";
+
+
+
+
 const Nav = () => {
 
   const [navsmall , setNavsmall] = useState(false)
@@ -29,7 +34,7 @@ const Nav = () => {
             <Link to='Price' smooth={true} duration={1000} className='nav-Link'>Price</Link>
             <Link to='Contact' smooth={true} duration={1000} className='nav-Link'>Contact</Link>
         </ul>
-        <div className="NavButtonZone"><button className='NavButton' onClick={NavFunction}>!!!</button></div>
+        <div className="NavButtonZone"><button className='NavButton' onClick={NavFunction}><AiOutlineBars /></button></div>
     </div>
 
         <ul className={navsmall ? 'smail-nav-list' : "navOff"}>
