@@ -2,6 +2,9 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import Link from 'next/link';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Portfolio = () => {
 
 const [Allsearch , setAllsearch]=useState('')
@@ -14,13 +17,19 @@ const [Allsearch , setAllsearch]=useState('')
       .catch(error => console.error('Error fetching products:', error));
   }, []);
 
-
+useEffect(() => {
+  AOS.init({
+    duration: 1000, // مدة التحريك
+    easing: "ease-in-out", // نوع الحركة
+    once: true, // هل يظهر التأثير مرة واحدة فقط
+  });
+}, []);
 
 
   return (
     <div className='PortfolioHome' id='Portfolio'>
         <h1 className='PortfolioHomeHeadData'>Have You Seen our Works?</h1>
-        <p className='PortfolioHomeBodyData'>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+        <p className='PortfolioHomeBodyData'>A selection of projects that showcase our expertise in front-end development — from elegant landing pages to fully responsive websites designed to wow visitors.</p>
         <div className="PortfolioHomeButtonS">
             <button className='PortfolioHomeButton' onClick={()=>{setAllsearch('')}}>All</button>
             <button className='PortfolioHomeButton' onClick={()=>{setAllsearch('react')}}>React.js</button>
@@ -41,7 +50,7 @@ const [Allsearch , setAllsearch]=useState('')
         {products.filter(product => {
           return Allsearch.toLocaleLowerCase() === '' ? product : product.category.toLocaleLowerCase().includes(Allsearch.toLocaleLowerCase());
         }).map(product => (
-          <div key={product.title} className="PortfolioCart" >
+          <div key={product.title} className="PortfolioCart"  data-aos="zoom-in-up">
             <img className='PortfolioCatrImg' src={product.image} loading='lazy' alt={product.title} />
             <h3 className='PortfolioCatrtitle'>{product.title}</h3>
             <h3>{product.description}</h3>

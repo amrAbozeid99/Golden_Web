@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <div className="ClientsHome" id='Clients'>
         <h1>What Client Say?</h1>
-        <p className='ClientsHomeData'>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+        <p className='ClientsHomeData'>We believe that customer satisfaction is our greatest achievement. Discover real reviews from our partners who have found value, professionalism, and results in our services.</p>
 
         <div className="ClientsCarts">
             <div className="ClientsCart">

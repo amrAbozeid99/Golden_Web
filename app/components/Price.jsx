@@ -1,10 +1,10 @@
 "use client";
 import React from 'react'
-import Link from 'next/link';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useState , useEffect } from 'react';
 import 'animate.css';
+import { Link } from 'react-scroll'
 
 
 const Price = () => {
@@ -22,7 +22,7 @@ const Price = () => {
     <div className='PriceHome'  id='Price'>
         
     <h1>Price</h1>
-    <p className='PriceHomeData'>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+    <p className='PriceHomeData'>Choose the plan that best suits your project, from simple designs to comprehensive solutions. Each package includes technical support and attention to detail that makes all the difference.</p>
 
 
 
@@ -65,14 +65,14 @@ const Price = () => {
 
 <div className="EndPriceHome">
 <p className='EndPriceHomeTitel'>We Offer Custom Plans. Contact Us For More Info.</p>
-<Link className='EndPriceHomeLink' href="/" >Contact Us</Link>
+<Link className='EndPriceHomeLink' to="Contact"  smooth={true} duration={1000} >Contact Us</Link>
 </div>
 
 
 <div className="PriceHomeComunteAcount">
     <div className="PriceHomeComunteAcountHead"><h1>Newsletter</h1></div>
     <div className="PriceHomeComunteAcountBody">
-        <p className='PriceHomeComunteAcountBodyTitel'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p className='PriceHomeComunteAcountBodyTitel' style={{width:'90%'}}>Subscribe to our newsletter to receive the latest work, tech tips, and exclusive offers directly to your inbox.</p>
         <input className='PriceHomeComunteAcountBodyEmail' type="email" placeholder='Enter your email' />
         <button className='PriceHomeComunteAcountBodyButton'>Subscribe</button>
     </div>

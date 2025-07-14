@@ -34,7 +34,7 @@ body{
     padding: 0px 0px 0px 5px;
     display: flex;
     text-align: center ;
-    z-index: 0;
+    z-index: 1000;
 }
 .nav-list{
     display: flex;
@@ -43,7 +43,7 @@ body{
     gap: 20px;
     flex-grow: 1;
     padding: 0px 20px 0px 0px;
-
+    
 }
 
 .smail-nav-list{display: none;}
@@ -51,6 +51,7 @@ body{
 .homeNavZone{
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
 .nav-Link{
@@ -104,24 +105,32 @@ body{
 /* ________________________________________________________________________________________________________________________________ */
 /* ________________________________________________________________________________________________________________________________ */
 /* slide home zone  */
-
+.SlideHomeZone{
+    width: 100%;
+    z-index: 1;
+}
 .SlideHome{
     width: 100%;
-    min-height: 550px;
+    min-height: 500px;
     background-color: #FECE1A;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 40px;
-    padding-top: 60px;
+    padding-top: 73px;
 }
-.SlideHomeData{width: 50%;color: #000;}
+.SlideHomeData{width: 100%;color: #000;display: flex;align-items: center;justify-content: center;gap: 20px;}
+.SlideHomeDataA{
+    width: 50%;
+    padding-left: 5px;
+}
 .SlideHomeimg{width: 600px;height: 400px; }
 
 @media (max-width: 780px) {
-    .SlideHomeData{width: 100%;color: #000;text-align: center;}
-    .SlideHomeimg{width: 300;height: 250px; }
+    .SlideHome{    flex-wrap: wrap;height: auto;}
+    .SlideHomeDataA{width: 100%;}
+    .SlideHomeData{width: 100%;color: #000;text-align: center;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+    .SlideHomeimg{width: 90%;height: auto; }
 }
 
 /* ________________________________________________________________________________________________________________________________ */
@@ -546,6 +555,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+        cursor: context-menu;
+
 }
 .EndPriceHomeLink:hover{
     border: 2px solid #181A1C;

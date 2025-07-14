@@ -4,6 +4,8 @@ import Link from 'next/link';
 import  { useRef } from 'react';
 import { useState , useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -63,12 +65,23 @@ const [messageSent, setMessageSent] = useState(false);
 
 
 
+useEffect(() => {
+  AOS.init({
+    duration: 1000, // مدة التحريك
+    easing: "ease-in-out", // نوع الحركة
+    // once: true, // هل يظهر التأثير مرة واحدة فقط
+  });
+}, []);
+
+
+
+
   return (
     <div className='ContactHome' id='Contact'>
       
 
 <h1>Contact Us</h1>
-<p className='ContactHomeText'>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+<p className='ContactHomeText'>Whether you need design, technical support, or development consultation, our team is ready to provide the best possible communication experience.</p>
 
 
 
@@ -78,7 +91,7 @@ const [messageSent, setMessageSent] = useState(false);
     <h1>Say Hello</h1>
     <input className='ContactHomeformData' name="Name" type="text" placeholder="* Your name..." />
     <input className='ContactHomeformData' name="Email" type="email" placeholder="* Your email..." />
-    <input className='ContactHomeformData' name="Phone" type='phone' placeholder="* Your phone..." />
+    <input className='ContactHomeformData' name="Phone" type='number' placeholder="* Your phone..." />
     <input className='ContactHomeformComint' name="message" type="text" placeholder="* Comments..." />
     <button className={messageSent? 'messageSentNO':'ContactHomeformButton'} onClick={()=>{setMessageSent(true)}} type="submit"  id="send-mail">Send message</button>
     <h2 className={messageSent? 'messageSentOK':'messageSentNO'}>Message sent successfully</h2>
@@ -93,13 +106,13 @@ const [messageSent, setMessageSent] = useState(false);
     <p className='ContactHomeEndZonePhone'>+201207604778</p>
     <h3 className='ContactHomeEndZoneTEXT'>We Are Social</h3>
     <div className="ContactHomeEndsoshelLeinks">
-        <Link target='blank' href='https://www.facebook.com/profile.php?id=61576986519246&notif_id=1752122826894689&notif_t=page_user_activity&ref=notif#' className='ContactHomeEndsoshelLeink'><FaFacebookF /></Link>
-        <Link target='blank' href='https://x.com/GoldenWeb99' className='ContactHomeEndsoshelLeink'><FaTwitter /></Link>
-        <Link target='blank' href='https://www.instagram.com/amr.ath.9/' className='ContactHomeEndsoshelLeink'><FaInstagram /></Link>
-        <Link target='blank' href='https://www.linkedin.com/in/amr-apozeid-4b96a7251/' className='ContactHomeEndsoshelLeink'><FaLinkedinIn /></Link>
-        <Link target='blank' href='https://www.youtube.com/?app' className='ContactHomeEndsoshelLeink'><FaYoutube /></Link>
-        <Link target='blank' href='https://github.com/amrAbozeid99' className='ContactHomeEndsoshelLeink'><FaGithub /></Link>
-        <Link target='blank' href='https://wa.me/201158392932' className='ContactHomeEndsoshelLeink'><FaWhatsapp /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://www.facebook.com/profile.php?id=61576986519246&notif_id=1752122826894689&notif_t=page_user_activity&ref=notif#' className='ContactHomeEndsoshelLeink'><FaFacebookF /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://x.com/GoldenWeb99' className='ContactHomeEndsoshelLeink'><FaTwitter /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://www.instagram.com/amr.ath.9/' className='ContactHomeEndsoshelLeink'><FaInstagram /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://www.linkedin.com/in/amr-apozeid-4b96a7251/' className='ContactHomeEndsoshelLeink'><FaLinkedinIn /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://www.youtube.com/?app' className='ContactHomeEndsoshelLeink'><FaYoutube /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://github.com/amrAbozeid99' className='ContactHomeEndsoshelLeink'><FaGithub /></Link>
+        <Link data-aos="zoom-out" target='blank' href='https://wa.me/201158392932' className='ContactHomeEndsoshelLeink'><FaWhatsapp /></Link>
     </div>
 </div>
 

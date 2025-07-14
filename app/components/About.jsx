@@ -34,7 +34,7 @@ const About = () => {
 
     <div className='AboutHome' id='About'>
       <h1 className='AboutHeadData'>Who We Are?</h1>
-      <p className='AboutHeadBady'>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+      <p className='AboutHeadBady'>We believe that every project is an opportunity to create an exceptional digital experience. Thanks to our attention to detail and commitment to quality, we deliver design solutions that inspire and impact.</p>
 
 <div className="AboutTeamData">
 {products.map((product)=>(
