@@ -41,12 +41,12 @@
     ,
     {
         "id": 4,
-        "title": "blue Dashboard",
+        "title": "Orange car",
         "price": 45.3,
-        "description": "This is a prototype of a responsive dashboard for all available sizes.",
-        "category": "native",
-        "LinkTarget": "https://golden-dashboard-start.web.app/",
-        "image": "./img/projectes/Golden Dashboard.webp",
+        "description": "This is a one-page responsive e-commerce store mockup.",
+        "category": "react",
+        "LinkTarget": "https://orange-car.web.app/",
+        "image": "./img/projectes/orange car.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -60,6 +60,19 @@
         "category": "native",
         "LinkTarget": "https://x-o-game-b95c7.web.app/",
         "image": "./img/projectes/x o game.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 6,
+        "title": "blue Dashboard",
+        "price": 45.3,
+        "description": "This is a prototype of a responsive dashboard for all available sizes.",
+        "category": "native",
+        "LinkTarget": "https://golden-dashboard-start.web.app/",
+        "image": "./img/projectes/Golden Dashboard.webp",
         "rating": {
             "rate": 4.7,
             "count": 500
